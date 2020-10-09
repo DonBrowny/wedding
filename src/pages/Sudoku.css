@@ -1,0 +1,79 @@
+.sudoku-row {
+  display: inline-flex;
+  height: 11.201%;
+}
+
+.sudoku-column {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  cursor: pointer;
+}
+
+.cell {
+  display: grid;
+  place-items: center;
+  width: 11.11%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid grey;
+  font-size: 1.8em;
+}
+.cell:not(.cellSelect):hover {
+  background-color: #def;
+}
+
+.locked {
+  background-color: white;
+  text-align: center;
+  color: #9e9a9e;
+}
+
+.editable {
+  background-color: white;
+}
+
+.cellSelect {
+  background-color: #aed9ff;
+}
+
+.highlightCell {
+  background-color: aliceblue;
+}
+
+.highlightValue {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* for 8th column */
+.rightDark {
+  border-right: 3px solid #444;
+}
+
+/* for 2 and 5th column */
+.rightLight {
+  border-right: 2px solid #444;
+}
+
+/* for 0th column */
+.leftDark {
+  border-left: 3px solid #444;
+}
+
+/* for 8th column */
+.bottomDark {
+  border-bottom: 3px solid #444;
+}
+
+/* for 2 and 5th row */
+.bottomLight {
+  border-bottom: 2px solid #444;
+}
+
+/* for 0th row */
+.topDark {
+  border-top: 3px solid #444;
+}
