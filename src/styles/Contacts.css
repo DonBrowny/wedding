@@ -1,0 +1,22 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-small {
+  flex: 40%;
+}
+
+.column-large {
+  flex: 60%;
+}
+
+span a {
+  padding: 0 3px;
+}
