@@ -21,15 +21,15 @@ const input = data.board.map((row) => {
   });
 });
 
-const initialState = {
+const intialState = {
   sudokuData: input,
   selectedCell: undefined,
 };
 
-export const SudokuContext = createContext(initialState);
+export const SudokuContext = createContext(intialState);
 
 export const SudokuProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(AppReducer, initialState);
+  const [state, dispatch] = useReducer(AppReducer, intialState);
 
   function setSelectedCell(selectedCell) {
     dispatch({
