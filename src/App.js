@@ -9,7 +9,7 @@ import Invitation from './pages/Invitation';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={'/wedding'}>
       <Switch>
         <Route path="/" component={Invitation} exact />
         <Route path="/sudoku" component={Sudoku} exact />
