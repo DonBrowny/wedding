@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import Home from './home/Home';
+import Home from './pages/Home';
 import './App.css';
 import 'antd/dist/antd.css';
-import About from './about/About';
-import Sudoku from './sudoku/Sudoku';
+import About from './pages/About';
+import Sudoku from './pages/Sudoku';
 
 function App() {
   return (
